@@ -1,0 +1,28 @@
+package ejercicios7_1ConstructoresYVisibilidad;
+
+public class Professor extends Person {
+
+	private double salary;
+	
+	//Constructor
+	public Professor() {
+		
+		salary=0.0;
+	}
+
+	// Getters
+	public double getSalary() {
+		return salary;
+	}
+
+	// Setters
+	public void setSalary(double salary) {
+		this.salary = salary;
+	}
+
+	// toString
+	public String toString() {
+		return String.format("%s Sueldo: %.2f\n", super.toString(), salary);
+	}
+
+}

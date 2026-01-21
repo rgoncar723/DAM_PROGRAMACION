@@ -1,0 +1,36 @@
+package ejercicios7_1ConstructoresYVisibilidad;
+
+import java.util.Scanner;
+
+public class Main {
+	@SuppressWarnings("resource")
+	public void show() {
+		Professor profesor = new Professor();
+		Student estudiante = new Student();
+		Person persona;
+		int value;
+		Scanner keyboard = new Scanner(System.in);
+		//mostrar por con sola profesor y estudiante
+		System.out.println(profesor);
+		System.out.println(estudiante);
+		System.out.println("--------------------");
+		System.out.println("Por favor escriba 1 o 2 para ver un estudiante o un profesor respectivamente");
+		value= keyboard.nextInt();
+		if(value==1) {
+			persona = new Student();
+			System.out.println(persona);
+		} else if(value ==2) {
+			persona = new Professor();
+			System.out.println(persona);
+		}else{
+			System.out.println("No ha introducido el numero correcto");
+		}
+		
+	}
+
+	public static void main(String[] args) {
+		new Main().show();
+
+	}
+
+}
