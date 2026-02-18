@@ -5,8 +5,8 @@ public class AccesoPuntual<T extends Number> {
 	private Bono bono;
 	private int activities;
 
-	public AccesoPuntual(T t, Bono bono, int activities) {
-		this.precio = t;
+	public AccesoPuntual(T precio, Bono bono, int activities) {
+		this.precio = precio;
 		this.bono = bono;
 		this.activities = activities;
 	}
